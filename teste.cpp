@@ -1,37 +1,19 @@
 #include <iostream>
+#include <algorithm>
+
 using namespace std;
 
-int solution(int n){
-    int sum = 0;
-    int a = 0;
-    while(n > 0){
-        a = n % 10;
-        sum +=a;
-        n = n / 10;
+class Solution {
+public:
+    int testSort(string tiles) {
+        sort(tiles.begin(), tiles.end());
+        cout << tiles << endl;  // Imprime a string ordenada
+        return 0;
     }
-    return sum;
 };
 
-int punishmentNumber(int n){
-    int result = 1;
-    
-    for(int i = 2; i <= n; i++){
-        printf("%d\n", i);
-        if( i == (solution(i*i))){
-            result+=i*i;
-        }
-    }
-
-    return result;
-};
-
-
-int main(){
-
-    int n;
-    cin >> n;
-    cout << punishmentNumber(n) << endl;
-
-
-  return 0;
+int main() {
+    Solution solution;
+    cout << solution.testSort("ACB") << endl;  // Chamada correta dentro do main()
+    return 0;
 }
