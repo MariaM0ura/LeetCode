@@ -9,7 +9,7 @@ class Solution {
 public:
 
     int numTilePossibilities(string tiles) {
-        // Ordenar 
+        // Ordenar para facilitar
         sort(tiles.begin(), tiles.end()); 
 
         vector<bool> used(tiles.size(), false);
@@ -41,10 +41,8 @@ private:
 
 int main() {
     Solution solution;
-    // cout << solution.numTilePossibilities("AAB") << endl; // Output: 8
-    // cout << solution.numTilePossibilities("AAABBC") << endl; // Output: 188
-    // cout << solution.numTilePossibilities("V") << endl; // Output: 1
+    cout << solution.numTilePossibilities("AAB") << endl;
 
-    cout << solution.testSort("AAB") << endl;
+
     return 0;
 }
