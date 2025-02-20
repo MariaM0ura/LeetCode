@@ -1,3 +1,7 @@
+#include <vector>
+#include <string>
+using namespace std;
+
 class Solution {
     public:
         string findDifferentBinaryString(vector<string>& nums) {
@@ -9,6 +13,13 @@ class Solution {
             }
     
             return result;
-        }
-    };
+    }
+};
+
+int main() {
+    Solution solution;
+    vector<string> nums = {"00", "01"};
+    string result = solution.findDifferentBinaryString(nums);
+    return 0;
+}
     
