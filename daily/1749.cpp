@@ -1,3 +1,8 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 class Solution {
     public:
         int maxAbsoluteSum(vector<int>& nums) {
@@ -14,4 +19,12 @@ class Solution {
             return max(abs(max_sum), abs(min_sum));
         }
     };
-    
+
+
+int main() {
+    Solution solution;
+    vector<int> nums = {1, -3, 2, 3, -4};
+    cout << solution.maxAbsoluteSum(nums) << endl;  // Saída: 5
+
+    return 0;
+}
