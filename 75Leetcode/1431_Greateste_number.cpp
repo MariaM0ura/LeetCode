@@ -21,6 +21,22 @@ class Solution {
             
             // Return the result
             return result;
+
         }
     };
+
+int main() {
+Solution solution;
+    vector<int> candies = {2, 3, 5, 1, 3};
+    int extraCandies = 3;
+    
+    vector<bool> result = solution.kidsWithCandies(candies, extraCandies);
+    
+    // Print the result
+    for (bool canHaveGreatest : result) {
+        cout << (canHaveGreatest ? "true" : "false") << " ";
+    }
+    
+    return 0;
+}
     
