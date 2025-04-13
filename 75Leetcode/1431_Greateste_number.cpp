@@ -16,6 +16,9 @@ class Solution {
             // Step 3: Iterate over each kid and check if they can have the greatest number of candies
             for (int candy : candies) {
                 // Check if the current kid's candies + extraCandies >= maxCandies
+                // If so, they can have the greatest number of candies
+                // Otherwise, they cannot
+                // Push the result into the result vector   
                 result.push_back(candy + extraCandies >= maxCandies);
             }
             
