@@ -1,3 +1,9 @@
+#include <iostream>
+#include <unordered_set>
+#include <string>
+using namespace std;
+// 345. Reverse Vowels of a String
+
 class Solution {
     public:
         string reverseVowels(string s) {
@@ -22,4 +28,12 @@ class Solution {
             return s;
         }
     };
-    
+
+    int main() {
+        Solution sol;
+        string s = "hello";
+        cout << sol.reverseVowels(s) << endl; // Output: "holle"
+        return 0;
+    }
+// Output: "holle"
+    }   
