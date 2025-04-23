@@ -17,3 +17,13 @@ class Solution {
             return result;
         }
     };
+
+int main(){
+    Solution sol;
+    int n = 15;
+    vector<string> result = sol.fizzBuzz(n);
+    for (const string& str : result) {
+        cout << str << endl;
+    }
+    return 0;
+}
